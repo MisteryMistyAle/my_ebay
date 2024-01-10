@@ -4,6 +4,7 @@ price = html.css('[ux-textspans]').text
 price = html.css('ux-textspans').text if price.strip == ''
 price = html.css('[itemprop="price"]').text if price.strip == ''
 price = html.css('.vi-VR-cvipPrice').text if price.strip == ''
+price = html.css('.display-price').text if price.strip == ''
 price = '158.00' if price.strip == ''
 raise 'something happend!' if price.strip == ''
 

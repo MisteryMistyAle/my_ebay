@@ -10,3 +10,9 @@ parsers:
   - file: ./parsers/product.rb
     page_type: product
     disabled: false
+
+exporters:
+  - exporter_name: products # Must be unique
+    exporter_type: json
+    collection: products
+    write_mode: pretty_array # can be `line`,`pretty`, `pretty_array`, or `array`
